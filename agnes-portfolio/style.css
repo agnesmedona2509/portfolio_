@@ -1,0 +1,469 @@
+/*
+  Agnes Medona J – Enterprise Agile Delivery Leader
+  Portfolio styles: clean white leadership theme, subtle blue accent (#2563eb).
+  Production-ready, GitHub Pages compatible. No frameworks.
+*/
+
+/* --- Base --- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  background: #fff;
+  color: #1f2937;
+  line-height: 1.6;
+  padding-top: 4rem;
+}
+
+/* --- Fixed top navigation --- */
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #2563eb;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
+.nav-links a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.35rem 0;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-toggle {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23374151' stroke-width='2'%3E%3Cline x1='3' y1='6' x2='21' y2='6'/%3E%3Cline x1='3' y1='12' x2='21' y2='12'/%3E%3Cline x1='3' y1='18' x2='21' y2='18'/%3E%3C/svg%3E") center no-repeat;
+  background-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* --- Layout --- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-alt {
+  background: #f9fafb;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.section-lead {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin: 0 0 1.5rem;
+  max-width: 42em;
+}
+
+/* --- Hero --- */
+.hero {
+  padding: 4rem 1.25rem 3.5rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.hero-location {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 1.25rem;
+}
+
+.hero-tagline {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* --- Executive Positioning --- */
+.positioning-body {
+  margin: 0 0 1rem;
+  color: #374151;
+}
+
+.positioning-list {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  color: #4b5563;
+}
+
+.positioning-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* --- Delivery Operating Model --- */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.model-card {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.model-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.5rem;
+}
+
+.model-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+/* --- Delivery Leadership Toolkit (Frameworks) --- */
+.framework-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.framework-card {
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.framework-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.75rem;
+}
+
+.framework-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.55;
+}
+
+.framework-card p:last-child {
+  margin-bottom: 0;
+}
+
+.framework-card ul {
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.framework-card li {
+  margin-bottom: 0.4rem;
+}
+
+.subsection-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 2.5rem 0 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.techniques-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.techniques-grid .framework-card ul {
+  font-size: 0.95rem;
+}
+
+/* --- Enterprise Case Portfolio --- */
+.case-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.case-card {
+  background: #fff;
+  padding: 1.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.case-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.case-card p {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.55;
+}
+
+.case-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Product Showcase --- */
+.product-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.75rem;
+}
+
+.product-body {
+  margin: 0 0 1rem;
+  color: #374151;
+}
+
+.product-capabilities {
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.5rem;
+  color: #4b5563;
+}
+
+.product-capabilities li {
+  margin-bottom: 0.35rem;
+}
+
+.screenshot-wrap {
+  margin: 1.5rem 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.screenshot-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.product-cta {
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0;
+}
+
+/* --- Governance & Tooling --- */
+.governance-list {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  color: #374151;
+  max-width: 42em;
+}
+
+.governance-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+}
+
+/* --- Certifications --- */
+.cert-note {
+  margin: 0;
+  color: #4b5563;
+  max-width: 42em;
+}
+
+/* --- Contact --- */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #374151;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.contact-list a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.footer-location {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* --- Responsive: mobile --- */
+@media (max-width: 768px) {
+  body {
+    padding-top: 3.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-fixed.nav-open .nav-links {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .hero-name {
+    font-size: 1.6rem;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    padding: 0.6rem 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
